@@ -1,0 +1,112 @@
+/* Fondo con imagen y efecto overlay oscuro */
+.insertar-entidad-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/fondo-entidades.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Contenedor principal del formulario */
+.formulario-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem 3rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Título */
+.formulario-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a237e;
+}
+
+/* Estilo del formulario */
+.entidad-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s ease-in-out;
+}
+
+input:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+/* Botón */
+button {
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #135ab6;
+}
+
+button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+/* Mensajes de éxito o error */
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Validación */
+.error-field input {
+  border: 2px solid #e53935;
+  background-color: #fff5f5;
+}
+
+.error-field small {
+  color: #e53935;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}

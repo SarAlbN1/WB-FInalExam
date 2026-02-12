@@ -1,0 +1,19 @@
+<div class="insertar-entidad-background">
+  <div class="formulario-container">
+    <h2>Insertar Entidad</h2>
+
+    <form class="entidad-form" (ngSubmit)="insertarEntidad()">
+      <div class="form-group">
+        <label for="nit">NIT:</label>
+        <input type="text" id="nit" [(ngModel)]="entidad.nit" name="nit" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" [(ngModel)]="entidad.nombre" name="nombre" required>
+      </div>
+
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+</div>
